@@ -3,59 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>柏涵 · 个人主页</title>
-<meta name="description" content="柏涵的个人主页，记录作品与想法。">
+<title>钟海波 · 个人主页</title>
+<meta name="description" content="钟海波，分公司总经理 / 区域总经理，24 年工作经验，通信工程、IDC 互联网与云计算、建筑工程专业分包。">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <style>
 :root{
-  --bg:#f7f8fa; --card:#ffffff; --ink:#1f2328; --muted:#5b6472;
-  --line:#e6e9ee; --accent:#2f6fed; --accent-soft:#eaf1ff;
+  --bg:#f7f8fa; --card:#ffffff; --ink:#182433; --muted:#5b6472;
+  --line:#e6e9ee; --accent:#2f6fed; --deep:#123a6b; --accent-soft:#eaf1ff;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);
  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
- line-height:1.75;-webkit-font-smoothing:antialiased}
+ line-height:1.8;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:920px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;background:rgba(247,248,250,.9);backdrop-filter:blur(8px);
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;background:rgba(247,248,250,.94);backdrop-filter:blur(8px);
  border-bottom:1px solid var(--line);z-index:10}
-nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{font-weight:700;font-size:17px;letter-spacing:.02em}
-.links{display:flex;gap:22px;font-size:14px;color:var(--muted)}
+nav{display:flex;align-items:center;justify-content:space-between;height:62px;gap:16px}
+.brand{font-weight:700;font-size:16px;color:var(--deep);white-space:nowrap}
+.links{display:flex;gap:20px;font-size:14px;color:var(--muted);white-space:nowrap}
 .links a:hover{color:var(--accent)}
-.hero{padding:88px 0 72px}
+.hero{padding:74px 0 58px}
 .kicker{display:inline-block;background:var(--accent-soft);color:var(--accent);
- font-size:13px;padding:5px 12px;border-radius:999px;margin-bottom:22px}
-h1{font-size:clamp(32px,6vw,52px);line-height:1.25;margin:0 0 18px;letter-spacing:-.01em}
-.lead{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 32px}
+ font-size:14px;padding:5px 14px;border-radius:999px;margin-bottom:20px;font-weight:600}
+h1{font-size:clamp(38px,7vw,60px);line-height:1.2;margin:0 0 16px;letter-spacing:.02em;color:var(--deep)}
+.lead{font-size:18px;color:var(--muted);margin:0 0 22px;max-width:700px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:15px;color:var(--muted);margin-bottom:30px}
+.facts b{color:var(--ink);font-weight:600}
 .btnrow{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:11px 22px;border-radius:10px;font-size:15px;font-weight:600;
+.btn{display:inline-block;padding:10px 22px;border-radius:10px;font-size:15px;font-weight:600;
  transition:transform .15s ease,box-shadow .15s ease}
 .btn:hover{transform:translateY(-2px)}
 .btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 16px rgba(47,111,237,.18)}
 .btn-ghost{border:1px solid var(--line);background:var(--card);color:var(--ink)}
-section{padding:44px 0;border-top:1px solid var(--line)}
-h2{font-size:22px;margin:0 0 20px;display:flex;align-items:center;gap:10px}
+section{padding:42px 0;border-top:1px solid var(--line)}
+h2{font-size:22px;margin:0 0 24px;display:flex;align-items:center;gap:10px;color:var(--deep)}
 h2::before{content:"";width:4px;height:20px;background:var(--accent);border-radius:2px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;
- transition:border-color .15s ease,transform .15s ease}
-.card:hover{border-color:#c9d6f2;transform:translateY(-2px)}
-.card h3{margin:0 0 8px;font-size:17px}
-.card p{margin:0;color:var(--muted);font-size:14px}
-.tag{display:inline-block;font-size:12px;color:var(--accent);background:var(--accent-soft);
- padding:3px 9px;border-radius:6px;margin-bottom:12px}
-.about p{color:var(--muted);margin:0 0 14px;max-width:680px}
+.prose{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.prose p{margin:0;color:#3c4655;font-size:15.5px}
+.prose p + p{margin-top:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.skill{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;
+ font-size:15px;font-weight:600;display:flex;align-items:center;gap:12px}
+.skill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:#dbe4f5}
+.job{position:relative;margin-bottom:28px}
+.job:last-child{margin-bottom:0}
+.job::before{content:"";position:absolute;left:-26px;top:9px;width:12px;height:12px;
+ border-radius:50%;background:var(--card);border:2px solid var(--accent)}
+.job-head{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;margin-bottom:4px}
+.period{font-size:14px;font-weight:700;color:var(--deep);white-space:nowrap}
+.company{font-size:16px;font-weight:700}
+.role{font-size:14.5px;color:var(--accent);font-weight:600;margin-bottom:8px}
+.role .sep{color:#c9d2e0;margin:0 8px}
+.role .tagline{font-weight:500}
+.job-desc{margin:0;color:#3c4655;font-size:14.5px}
+.job-desc + .job-desc{margin-top:8px}
+.edu{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;
+ background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:14px}
+.edu:last-child{margin-bottom:0}
+.edu .school{font-size:16px;font-weight:700}
+.edu .major{color:var(--muted);font-size:14.5px;flex-basis:100%}
+.honor{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.honor h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+.honor p{margin:0;font-size:14.5px;color:#3c4655}
 .contact{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
 .contact p{color:var(--muted);margin:0 0 12px}
-.mail{font-size:17px;font-weight:600;color:var(--accent);word-break:break-all}
+.mail{font-size:18px;font-weight:700;color:var(--accent);word-break:break-all}
 .mail a:hover{text-decoration:underline}
-footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;
+footer{padding:30px 0 42px;border-top:1px solid var(--line);color:var(--muted);font-size:13px;
  display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media(max-width:600px){.hero{padding:60px 0 48px}.links{gap:14px;font-size:13px}section{padding:34px 0}}
+@media(max-width:720px){
+ .links{gap:12px;font-size:13px}
+ .links a:nth-child(4),.links a:nth-child(5){display:none}
+ .hero{padding:52px 0 42px}
+ section{padding:32px 0}
+ .prose,.contact{padding:20px}
+ .timeline{padding-left:22px}
+ .job::before{left:-22px}
+}
+@media print{
+ header,.btnrow,footer{display:none}
+ body{background:#fff}
+ .hero{padding:16px 0 20px}
+ section{padding:18px 0;break-inside:avoid}
+ .prose,.skill,.edu,.honor,.contact{border-color:#ddd;break-inside:avoid}
+ .job{break-inside:avoid}
+}
 </style>
 </head>
 <body>
@@ -63,11 +101,13 @@ footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);f
 <header>
   <div class="wrap">
     <nav>
-      <!-- 待替换：左上角站名 -->
-      <div class="brand">柏涵 · 个人主页</div>
+      <div class="brand">钟海波 · 个人主页</div>
       <div class="links">
-        <a href="#about">关于我</a>
-        <a href="#works">作品</a>
+        <a href="#about">个人概述</a>
+        <a href="#skills">核心能力</a>
+        <a href="#experience">工作经历</a>
+        <a href="#education">教育背景</a>
+        <a href="#honors">荣誉证书</a>
         <a href="#contact">联系</a>
       </div>
     </nav>
@@ -77,50 +117,107 @@ footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);f
 <main class="wrap">
 
   <div class="hero">
-    <!-- 待替换：身份标签、姓名、一句话介绍 -->
-    <span class="kicker">欢迎来到我的个人主页</span>
-    <h1>你好，我是柏涵。</h1>
-    <p class="lead">这里是我的个人空间，用来放作品、记录想法，也方便你找到我。页面很简单，内容会慢慢补充。</p>
+    <span class="kicker">分公司总经理 / 区域总经理</span>
+    <h1>钟海波</h1>
+    <p class="lead">24 年工作经验，历任技术工程师、售前支持、大客户销售、销售团队管理、区域分公司总经理与商务总监。</p>
+    <div class="facts">
+      <span><b>24 年</b> 工作经验</span>
+      <span><b>定居</b> 广州</span>
+      <span><b>领域</b> 通信工程 · IDC 云计算 · 建筑工程专业分包</span>
+    </div>
     <div class="btnrow">
-      <a class="btn btn-primary" href="#works">看看作品</a>
+      <a class="btn btn-primary" href="#experience">查看工作经历</a>
       <a class="btn btn-ghost" href="#contact">联系我</a>
     </div>
   </div>
 
-  <section id="about" class="about">
-    <h2>关于我</h2>
-    <!-- 待替换：下面三段自我介绍 -->
-    <p>我是一名喜欢把事情做简单的人，平时关注工具、效率与日常里的小改进。</p>
-    <p>这个网站是我自己在网上的一小块地方，不追热点，只放确实想留下的东西。</p>
-    <p>如果你也对这些话题感兴趣，欢迎通过下面的方式跟我聊聊。</p>
+  <section id="about">
+    <h2>个人概述</h2>
+    <div class="prose">
+      <p>24 年工作经历涵盖通信工程、IDC 互联网与云计算、建筑工程专业分包，从一线技术工程师起步，历任售前支持、大客户销售、销售团队管理、区域分公司总经理与商务总监。在广东睿江云计算任广州公司总经理 12 年，负责分公司经营计划、目标拆解、团队建设与地缘关系维护；近两年转向建筑工程专业分包，负责投标经营与商务管理。管理风格结果导向，具备股东 / 持股平台视角，熟悉新三板公众公司的治理与合规要求。</p>
+    </div>
   </section>
 
-  <section id="works">
-    <h2>作品与链接</h2>
-    <!-- 待替换：下面三张卡片，改成自己的项目；没有就删掉整段 -->
+  <section id="skills">
+    <h2>核心能力</h2>
     <div class="grid">
-      <div class="card">
-        <span class="tag">项目一</span>
-        <h3>个人主页</h3>
-        <p>就是当前这个页面，一张静态网页，双击就能打开，不依赖任何外部服务。</p>
-      </div>
-      <div class="card">
-        <span class="tag">项目二</span>
-        <h3>待补充</h3>
-        <p>这里可以放你的项目、文章、照片集，或者任意想展示的内容。</p>
-      </div>
-      <div class="card">
-        <span class="tag">项目三</span>
-        <h3>待补充</h3>
-        <p>建议每张卡片配一句话说明和一条链接，读起来最清楚。</p>
-      </div>
+      <div class="skill">区域经营管理</div>
+      <div class="skill">销售目标拆解与达成</div>
+      <div class="skill">团队组建与人力优化</div>
+      <div class="skill">政企与大客户关系</div>
+      <div class="skill">地缘关系拓展</div>
+      <div class="skill">投标商务与合同风控</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>工作经历</h2>
+    <div class="timeline">
+
+      <article class="job">
+        <div class="job-head"><span class="period">2024.08 — 2026.09</span><span class="company">天微智能工程（广东）有限公司 等三家公司</span></div>
+        <div class="role">商务总监（股东之一）<span class="sep">|</span><span class="tagline">建筑工程专业分包（广州拓为环境工程 · 广州华瀚建筑劳务）</span></div>
+        <p class="job-desc">全面负责工程类项目投标经营与商务管理，主导投标决策、商务标统筹、报价与成本管控、合同商务谈判及合规风险控制；建立投标评审与报价复核机制。</p>
+        <p class="job-desc">以股东身份参与公司重大经营决策。</p>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><span class="period">2012.08 — 2024.08</span><span class="company">广东睿江云计算股份有限公司（新三板）— 广州睿江云计算有限公司</span></div>
+        <div class="role">广州公司总经理<span class="sep">|</span><span class="tagline">互联网 / 云计算 · 股份制企业</span></div>
+        <p class="job-desc">全面负责分公司经营发展的计划、组织、管理与实施，对分公司整体经营结果负责；将整体销售目标拆解为可落地的销售计划，监督实施销售全过程。</p>
+        <p class="job-desc">负责广州本地地缘关系拓展与维护，推动业务管理规范化；优化人力资源配置，提升团队组织能力与人均效能；牵头处理突发与紧急事项；作为持股平台股东之一，参与公司重大经营事项的决策。</p>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><span class="period">2009.08 — 2012.03</span><span class="company">广州尚航信息科技有限公司（新三板）</span></div>
+        <div class="role">销售部经理 / 大客户经理<span class="sep">|</span><span class="tagline">互联网 / IDC · 股份制企业</span></div>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><span class="period">2007.11 — 2009.08</span><span class="company">上海帝联信息科技发展有限公司（鹏博士 600804 子公司）</span></div>
+        <div class="role">运维工程师 → 售前工程师<span class="sep">|</span><span class="tagline">IDC / CDN · 股份制企业</span></div>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><span class="period">2006.02 — 2007.10</span><span class="company">北京向心合力通信技术有限公司（华为合作方）</span></div>
+        <div class="role">通信技术工程师<span class="sep">|</span><span class="tagline">通信工程 · 私营企业</span></div>
+      </article>
+
+      <article class="job">
+        <div class="job-head"><span class="period">2002.01 — 2002.09</span><span class="company">江西省萍乡市安源网络科技有限公司</span></div>
+        <div class="role">技术员<span class="sep">|</span><span class="tagline">硬件维护与网络工程</span></div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>教育背景</h2>
+    <div class="edu">
+      <span class="period">2003.09 — 2006.07</span>
+      <span class="school">江西教育学院</span>
+      <span class="major">通信工程（第二专业方向：计算机硬件组装与网络维护）</span>
+    </div>
+    <div class="edu">
+      <span class="period">1999.09 — 2003.07</span>
+      <span class="school">江西省萍乡市福田中学</span>
+      <span class="major">高中</span>
+    </div>
+  </section>
+
+  <section id="honors">
+    <h2>荣誉与证书</h2>
+    <div class="grid">
+      <div class="honor"><h3>竞赛</h3><p>江西省第十六届学生电子电脑大赛 三等奖</p></div>
+      <div class="honor"><h3>荣誉</h3><p>2005 年度一等奖学金</p></div>
+      <div class="honor"><h3>证书</h3><p>CAAC 中型多旋翼 超视距无人机执照</p></div>
     </div>
   </section>
 
   <section id="contact">
     <h2>联系我</h2>
     <div class="contact">
-      <p>有想法、有合作，或者只是想打个招呼，都可以发邮件给我。</p>
+      <p>有合作意向或希望交流，欢迎通过邮件联系。</p>
       <div class="mail"><a href="mailto:ebia1005@agent.qq.com">ebia1005@agent.qq.com</a></div>
     </div>
   </section>
@@ -128,8 +225,8 @@ footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);f
 </main>
 
 <footer class="wrap">
-  <span>© <span id="year">2026</span> 柏涵</span>
-  <span>用一张简单的网页，留一块自己的地方</span>
+  <span>© <span id="year">2026</span> 钟海波</span>
+  <span>定居广州 · 24 年工作经验</span>
 </footer>
 
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
